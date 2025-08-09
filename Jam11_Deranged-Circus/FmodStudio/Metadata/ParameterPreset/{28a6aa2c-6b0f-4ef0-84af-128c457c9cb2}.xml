@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{28a6aa2c-6b0f-4ef0-84af-128c457c9cb2}">
+		<property name="name">
+			<value>Rotation</value>
+		</property>
+		<relationship name="folder">
+			<destination>{fe60d89f-f9af-4a22-982a-e3d65d9473f8}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{d763fd98-daaf-43ed-ba1a-79059c0ae806}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{d763fd98-daaf-43ed-ba1a-79059c0ae806}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>3.6000001430511475</value>
+		</property>
+	</object>
+</objects>
