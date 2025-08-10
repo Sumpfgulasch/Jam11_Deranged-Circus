@@ -6,9 +6,26 @@
   <component name="ChangeListManager">
     <list default="true" id="84f4aadf-4bf1-4e11-ba10-752ddaad5bf7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam11_Deranged-Circus/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam11_Deranged-Circus/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/Circus.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3D/Circus.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/CarpetRed.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/CarpetRed.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Obi/Samples/Common/SampleResources/Materials/Checker.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Obi/Samples/Common/SampleResources/Materials/Checker.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Obi/Samples/Common/SampleResources/Materials/CoarseChecker.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Obi/Samples/Common/SampleResources/Materials/CoarseChecker.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Obi/Samples/Common/SampleResources/Materials/FinishLine.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Obi/Samples/Common/SampleResources/Materials/FinishLine.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Obi/Samples/Common/SampleResources/Materials/Flesh.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Obi/Samples/Common/SampleResources/Materials/Flesh.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Obi/Samples/Common/SampleResources/Materials/Metal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Obi/Samples/Common/SampleResources/Materials/Metal.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Obi/Samples/Common/SampleResources/Materials/TestEnvironment.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Obi/Samples/Common/SampleResources/Materials/TestEnvironment.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Obi/Samples/Common/SampleResources/Materials/Walls.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Obi/Samples/Common/SampleResources/Materials/Walls.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Obi/Samples/RopeAndRod/CableCar.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Obi/Samples/RopeAndRod/CableCar.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Obi/Samples/RopeAndRod/Chains.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Obi/Samples/RopeAndRod/Chains.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Obi/Samples/RopeAndRod/SampleResources/Materials/ChainRed.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Obi/Samples/RopeAndRod/SampleResources/Materials/ChainRed.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Obi/Samples/RopeAndRod/SampleResources/Materials/ChainWhite.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Obi/Samples/RopeAndRod/SampleResources/Materials/ChainWhite.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Obi/Samples/RopeAndRod/SampleResources/Materials/GreenRope.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Obi/Samples/RopeAndRod/SampleResources/Materials/GreenRope.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Obi/Samples/RopeAndRod/SampleResources/Materials/LineRope.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Obi/Samples/RopeAndRod/SampleResources/Materials/LineRope.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Obi/Samples/RopeAndRod/SampleResources/Materials/RedRope.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Obi/Samples/RopeAndRod/SampleResources/Materials/RedRope.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Obi/Samples/RopeAndRod/SampleResources/Materials/Rod.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Obi/Samples/RopeAndRod/SampleResources/Materials/Rod.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Obi/Samples/RopeAndRod/SampleResources/Materials/Shark.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Obi/Samples/RopeAndRod/SampleResources/Materials/Shark.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Obi/Samples/RopeAndRod/SampleResources/Materials/Snake.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Obi/Samples/RopeAndRod/SampleResources/Materials/Snake.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Obi/Samples/RopeAndRod/SampleResources/Materials/TanglePeg.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Obi/Samples/RopeAndRod/SampleResources/Materials/TanglePeg.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Obi/Samples/RopeAndRod/SampleResources/Materials/WrapPeg.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Obi/Samples/RopeAndRod/SampleResources/Materials/WrapPeg.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Obi/Samples/RopeAndRod/Snake.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Obi/Samples/RopeAndRod/Snake.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +108,7 @@
       <option name="presentableId" value="Default" />
       <updated>1754756589817</updated>
       <workItem from="1754756592315" duration="3000" />
-      <workItem from="1754827236436" duration="1309000" />
+      <workItem from="1754827236436" duration="2842000" />
     </task>
     <servers />
   </component>
