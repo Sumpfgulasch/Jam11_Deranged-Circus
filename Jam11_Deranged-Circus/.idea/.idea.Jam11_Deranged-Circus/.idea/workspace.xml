@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84f4aadf-4bf1-4e11-ba10-752ddaad5bf7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Obi/Samples/RopeAndRod/SampleResources/Blueprints/Chain.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Obi/Samples/RopeAndRod/SampleResources/Blueprints/Chain.asset" afterDir="false" />
-    </list>
+    <list default="true" id="84f4aadf-4bf1-4e11-ba10-752ddaad5bf7" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,7 +86,7 @@
       <option name="presentableId" value="Default" />
       <updated>1754756589817</updated>
       <workItem from="1754756592315" duration="3000" />
-      <workItem from="1754827236436" duration="3561000" />
+      <workItem from="1754827236436" duration="4158000" />
     </task>
     <servers />
   </component>
