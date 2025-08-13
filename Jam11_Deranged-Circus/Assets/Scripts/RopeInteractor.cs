@@ -60,7 +60,8 @@ public class RopeInteractor : MonoBehaviour
             if (potentialPlugTarget != null)
             {
                 // Plug the rope.
-                currentRope.Plug(heldRopeEnd, potentialPlugTarget, grabTransitionDuration);
+                var socket = potentialPlugTarget.GetComponent<PluggableSocket>();
+                currentRope.Plug(heldRopeEnd, potentialPlugTarget, socket.dynamic, grabTransitionDuration);
                 heldRopeEnd = null;
                 currentRope = null;
                 grabIndicatorInstance.SetActive(false);

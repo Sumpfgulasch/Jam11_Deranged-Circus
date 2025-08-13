@@ -94,6 +94,7 @@ public class RopeController : MonoBehaviour
             
             // Enable the attachment and point it to our temporary target first.
             ropeEnd.attachment.target = tempTarget;
+            ropeEnd.attachment.attachmentType = ObiParticleAttachment.AttachmentType.Static;
             ropeEnd.attachment.enabled = true;
 
             // This coroutine will move the tempTarget to the player's hand, then assign the hand as the permanent target.
@@ -101,7 +102,7 @@ public class RopeController : MonoBehaviour
         }
     }
 
-    public void Plug(RopeEnd ropeEnd, Transform plugTarget, float transitionDuration)
+    public void Plug(RopeEnd ropeEnd, Transform plugTarget, bool isDynamic, float transitionDuration)
     {
         if (ropeEnd.state == RopeEndState.Held && activeTransition == null)
         {
@@ -122,6 +123,7 @@ public class RopeController : MonoBehaviour
                     socket.IsOccupied = true;
 
                 ropeEnd.attachment.target = plugTarget; // Assign the final plug as the target.
+                ropeEnd.attachment.attachmentType = isDynamic ? ObiParticleAttachment.AttachmentType.Dynamic : ObiParticleAttachment.AttachmentType.Static;
                 ropeEnd.state = RopeEndState.Plugged;
                 Destroy(tempTarget.gameObject);
             };

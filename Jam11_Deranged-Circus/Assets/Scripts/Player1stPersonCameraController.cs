@@ -38,12 +38,12 @@ public class Player1stPersonCameraController : MonoBehaviour
     void Update()
     {
         ReadInput();
+        Look();
     }
 
     void FixedUpdate()
     {
         Move();
-        Look();
     }
 
     private void ReadInput()
@@ -58,20 +58,18 @@ public class Player1stPersonCameraController : MonoBehaviour
         rb.linearVelocity = moveDirection * moveSpeed;
     }
 
+    private float cameraPitch = 0.0f;
+
     private void Look()
     {
+        // Horizontal rotation for the whole player body (physics-based)
         Quaternion horizontalRotation = Quaternion.Euler(0, lookInput.x, 0);
         rb.MoveRotation(rb.rotation * horizontalRotation);
-        float verticalRotation = -lookInput.y;
-        float currentPitch = playerCamera.transform.localRotation.eulerAngles.x;
-        float newPitch = currentPitch + verticalRotation;
 
-        if (newPitch > 180)
-        {
-            newPitch -= 360;
-        }
+        // Vertical rotation for the camera only (transform-based)
+        cameraPitch -= lookInput.y;
+        cameraPitch = Mathf.Clamp(cameraPitch, -lookXLimit, lookXLimit);
 
-        float clampedPitch = Mathf.Clamp(newPitch, -lookXLimit, lookXLimit);
-        playerCamera.transform.localRotation = Quaternion.Euler(clampedPitch, 0, 0);
+        playerCamera.transform.localRotation = Quaternion.Euler(cameraPitch, 0, 0);
     }
 }
