@@ -75,10 +75,15 @@ public class RopeInteractor : MonoBehaviour
         }
         else if (potentialGrabTarget != null)
         {
-            // Player is near a grabbable rope end.
+            // Player is near a grabbable or plugged rope end.
             heldRopeEnd = potentialGrabTarget;
             currentRope = FindObjectOfType<RopeController>(); // Assuming one rope for now.
-            currentRope.Grab(heldRopeEnd, playerGrabTransform, grabTransitionDuration);
+
+            if (heldRopeEnd.state == RopeController.RopeEndState.Free)
+                currentRope.Grab(heldRopeEnd, playerGrabTransform, grabTransitionDuration);
+            else if (heldRopeEnd.state == RopeController.RopeEndState.Plugged)
+                currentRope.Unplug(heldRopeEnd, playerGrabTransform, grabTransitionDuration);
+
             grabIndicatorInstance.SetActive(false);
         }
     }
@@ -98,12 +103,12 @@ public class RopeInteractor : MonoBehaviour
         float distToStart = Vector3.Distance(transform.position, rope.GetRopeEndPosition(rope.startEnd));
         float distToEnd = Vector3.Distance(transform.position, rope.GetRopeEndPosition(rope.endEnd));
 
-        if (rope.startEnd.state == RopeController.RopeEndState.Free && distToStart < grabRadius)
+        if ((rope.startEnd.state == RopeController.RopeEndState.Free || rope.startEnd.state == RopeController.RopeEndState.Plugged) && distToStart < grabRadius)
         {
             potentialGrabTarget = rope.startEnd;
             ShowIndicator(rope.GetRopeEndPosition(rope.startEnd));
         }
-        else if (rope.endEnd.state == RopeController.RopeEndState.Free && distToEnd < grabRadius)
+        else if ((rope.endEnd.state == RopeController.RopeEndState.Free || rope.endEnd.state == RopeController.RopeEndState.Plugged) && distToEnd < grabRadius)
         {
             potentialGrabTarget = rope.endEnd;
             ShowIndicator(rope.GetRopeEndPosition(rope.endEnd));
@@ -117,18 +122,25 @@ public class RopeInteractor : MonoBehaviour
     private void CheckForPluggableTargets()
     {
         potentialPlugTarget = null;
-        Collider[] colliders = Physics.OverlapSphere(transform.position, plugRadius);
+        if (heldRopeEnd == null || currentRope == null) return;
+
+        Vector3 ropeEndPosition = currentRope.GetRopeEndPosition(heldRopeEnd);
+        Collider[] colliders = Physics.OverlapSphere(ropeEndPosition, plugRadius);
         float closestDist = float.MaxValue;
 
         foreach (var col in colliders)
         {
             if (col.CompareTag(pluggableTag))
             {
-                float dist = Vector3.Distance(transform.position, col.transform.position);
-                if (dist < closestDist)
+                var socket = col.GetComponent<PluggableSocket>();
+                if (socket != null && !socket.IsOccupied)
                 {
-                    closestDist = dist;
-                    potentialPlugTarget = col.transform;
+                    float dist = Vector3.Distance(ropeEndPosition, col.transform.position);
+                    if (dist < closestDist)
+                    {
+                        closestDist = dist;
+                        potentialPlugTarget = col.transform;
+                    }
                 }
             }
         }

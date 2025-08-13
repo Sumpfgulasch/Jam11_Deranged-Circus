@@ -117,6 +117,10 @@ public class RopeController : MonoBehaviour
             ropeEnd.attachment.target = tempTarget;
 
             System.Action onComplete = () => {
+                var socket = plugTarget.GetComponent<PluggableSocket>();
+                if (socket != null)
+                    socket.IsOccupied = true;
+
                 ropeEnd.attachment.target = plugTarget; // Assign the final plug as the target.
                 ropeEnd.state = RopeEndState.Plugged;
                 Destroy(tempTarget.gameObject);
@@ -162,10 +166,37 @@ public class RopeController : MonoBehaviour
         }
     }
 
+    public void Unplug(RopeEnd ropeEnd, Transform grabTarget, float transitionDuration)
+    {
+        if (ropeEnd.state == RopeEndState.Plugged && activeTransition == null)
+        {
+            // The current target is the plug. We need to move from its position.
+            Transform currentTarget = ropeEnd.attachment.target;
+            
+            // Create a new temporary target that will be moved.
+            Transform tempTarget = new GameObject("TempUnplugTarget").transform;
+            tempTarget.position = currentTarget.position;
+            tempTarget.rotation = currentTarget.rotation;
+
+            // Point the attachment to the temporary target before starting the transition.
+            ropeEnd.attachment.target = tempTarget;
+
+            // At the end of the transition, the rope will be in the player's hand.
+            System.Action onComplete = () => {
+                var socket = currentTarget.GetComponent<PluggableSocket>();
+                if (socket != null)
+                    socket.IsOccupied = false;
+
+                ropeEnd.attachment.target = grabTarget;
+                ropeEnd.state = RopeEndState.Held;
+                Destroy(tempTarget.gameObject);
+            };
+
+            activeTransition = StartCoroutine(TransitionToPosition(ropeEnd, tempTarget, grabTarget, transitionDuration, onComplete));
+        }
+    }
+
     private IEnumerator TransitionToPosition(RopeEnd ropeEnd, Transform movingTarget, Transform finalDestination, float duration, System.Action onComplete = null) {
-        // wait 1 frame
-        yield return null;
-        
         Vector3 startPosition = movingTarget.position;
         Quaternion startRotation = movingTarget.rotation;
 
@@ -180,16 +211,15 @@ public class RopeController : MonoBehaviour
 
         movingTarget.position = finalDestination.position;
         movingTarget.rotation = finalDestination.rotation;
+        // wait 1 frame to properly snap position
+        yield return null;
 
         onComplete?.Invoke();
 
         activeTransition = null;
     }
 
-    private IEnumerator TransitionGrab(RopeEnd ropeEnd, Transform tempTarget, Transform finalTarget, float duration) {
-        // wait 1 frame
-        yield return null;
-        
+    private IEnumerator TransitionGrab(RopeEnd ropeEnd, Transform tempTarget, Transform finalTarget, float duration) { 
         Vector3 startPosition = tempTarget.position;
         float elapsedTime = 0;
 
