@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody))]
-public class PlayerController : MonoBehaviour
+public class Player1stPersonCameraController : MonoBehaviour
 {
     [Header("Movement")]
     public float moveSpeed = 5f;
