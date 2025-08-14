@@ -1,3 +1,5 @@
+using System;
+using Audio;
 using FMOD.Studio;
 using UnityEngine;
 
@@ -24,10 +26,20 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    private void Start() {
+        Play2DAudio(AudioEvent.RoomAmbience);
+    }
+
     public EventInstance Play3DAudio(FMOD.GUID audioEvent, Transform target) {
         var instance = FMODUnity.RuntimeManager.CreateInstance(audioEvent);
         instance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(target));
         FMODUnity.RuntimeManager.AttachInstanceToGameObject(instance, target.gameObject);
+        instance.start();
+        return instance;
+    }
+    
+    public EventInstance Play2DAudio(FMOD.GUID audioEvent) {
+        var instance = FMODUnity.RuntimeManager.CreateInstance(audioEvent);
         instance.start();
         return instance;
     }

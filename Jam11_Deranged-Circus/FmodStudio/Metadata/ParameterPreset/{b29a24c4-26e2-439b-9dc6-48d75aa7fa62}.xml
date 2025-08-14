@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{b29a24c4-26e2-439b-9dc6-48d75aa7fa62}">
+		<property name="name">
+			<value>ChainCollisionStrength</value>
+		</property>
+		<relationship name="folder">
+			<destination>{fe60d89f-f9af-4a22-982a-e3d65d9473f8}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{0619c509-77de-4f99-a2be-0d8dedd2f6ce}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{0619c509-77de-4f99-a2be-0d8dedd2f6ce}">
+		<property name="maximum">
+			<value>20</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="velocity">
+			<value>-75.999999046325684</value>
+		</property>
+	</object>
+</objects>

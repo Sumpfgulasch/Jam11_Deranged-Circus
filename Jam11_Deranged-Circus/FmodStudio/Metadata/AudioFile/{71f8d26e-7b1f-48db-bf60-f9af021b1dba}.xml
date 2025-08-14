@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{71f8d26e-7b1f-48db-bf60-f9af021b1dba}">
+		<property name="assetPath">
+			<value>Player/FOLEYFeet_Carpet_Wood_Boots_Medium 16.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.30070833333333336</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{21212df7-a7ff-47f9-9ee0-b893f7175b54}</destination>
+		</relationship>
+	</object>
+</objects>

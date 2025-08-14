@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{778748a1-8d61-4405-907e-ac99ecf911fa}">
+		<property name="assetPath">
+			<value>Player/FOLEYFeet_CarpetWood_Boots_Scuffs 01.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.34766666666666668</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{21212df7-a7ff-47f9-9ee0-b893f7175b54}</destination>
+		</relationship>
+	</object>
+</objects>

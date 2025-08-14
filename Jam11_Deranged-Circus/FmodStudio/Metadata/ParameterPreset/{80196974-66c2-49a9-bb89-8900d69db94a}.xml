@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{80196974-66c2-49a9-bb89-8900d69db94a}">
+		<property name="name">
+			<value>GroundVelocity</value>
+		</property>
+		<relationship name="folder">
+			<destination>{fe60d89f-f9af-4a22-982a-e3d65d9473f8}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{5d5c0246-62ef-40f0-ba85-1452a02303b2}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{5d5c0246-62ef-40f0-ba85-1452a02303b2}">
+		<property name="maximum">
+			<value>20</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>15.600000381469727</value>
+		</property>
+	</object>
+</objects>
