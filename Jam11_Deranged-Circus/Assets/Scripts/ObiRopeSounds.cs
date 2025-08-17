@@ -132,12 +132,10 @@ public class ObiRopeSounds : MonoBehaviour
         {
             ropeSound.getParameterByName("ChainCollisionStrength", out float currentFmodValue);
             AudioManager.Instance.SetLocalParameter(ropeSound, "ChainCollisionStrength", currentFmodValue + totalImpulse);
-            print("collision; adding value " + totalImpulse + ", total value: " + totalImpulse + currentFmodValue);
         }
 
         if (groundContacts > 0)
         {
-            print("total ground velocity: " + totalGroundVelocity);
             float averageGroundVelocity = totalGroundVelocity / groundContacts;
             AudioManager.Instance.SetLocalParameter(ropeSound, "GroundVelocity", averageGroundVelocity);
         }

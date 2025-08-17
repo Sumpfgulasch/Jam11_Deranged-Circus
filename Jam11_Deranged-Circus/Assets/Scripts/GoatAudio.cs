@@ -1,10 +1,15 @@
+using System;
 using Audio;
 using FMOD.Studio;
+using Obi;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
 public class GoatAudio : MonoBehaviour
 {
+    [Tooltip("The layers that will trigger the collision sound.")]
+    public LayerMask collisionLayerMask;
+    
     private Rigidbody rb;
     private EventInstance audioInstance;
 
@@ -35,6 +40,16 @@ public class GoatAudio : MonoBehaviour
         {
             audioInstance.stop(STOP_MODE.ALLOWFADEOUT);
             audioInstance.release();
+        }
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        // Check if the collision velocity is high enough and if the other object is on an allowed layer.
+        if (rb.linearVelocity.magnitude > 6f && ((1 << other.gameObject.layer) & collisionLayerMask) != 0)
+        {
+            Debug.Log("Collision with " + other.gameObject.name + " on a valid layer.");
+            AudioManager.Instance.SetLocalParameter(audioInstance, "GoatHit", 1f);
         }
     }
 }
