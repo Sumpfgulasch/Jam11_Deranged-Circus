@@ -49,7 +49,7 @@ public class GoatAudio : MonoBehaviour
         if (((1 << other.gameObject.layer) & collisionLayerMask) != 0)
         {
             Debug.Log("collision with circus; vel: " + rb.linearVelocity.magnitude);
-            if (rb.linearVelocity.magnitude > 3f) {
+            if (rb.linearVelocity.magnitude > 2.7f) {
                 Debug.Log("Collision with " + other.gameObject.name + " on a valid layer.");
                 AudioManager.Instance.SetLocalParameter(audioInstance, "GoatHit", 1f);
             }

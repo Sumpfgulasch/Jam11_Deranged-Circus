@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84f4aadf-4bf1-4e11-ba10-752ddaad5bf7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam11_Deranged-Circus/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam11_Deranged-Circus/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FmodGuids.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FmodGuids.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GoatAudio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GoatAudio.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/PC_RPAsset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/PC_RPAsset.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FmodStudio/.cache/buildrecords/Desktop/Master.br" beforeDir="false" afterPath="$PROJECT_DIR$/FmodStudio/.cache/buildrecords/Desktop/Master.br" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FmodStudio/Build/Desktop/Master.bank" beforeDir="false" afterPath="$PROJECT_DIR$/FmodStudio/Build/Desktop/Master.bank" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FmodStudio/Build/Desktop/Master.strings.bank" beforeDir="false" afterPath="$PROJECT_DIR$/FmodStudio/Build/Desktop/Master.strings.bank" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FmodStudio/Metadata/Event/{5e61d677-058d-4ee3-a237-63f5172e8bc8}.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +50,14 @@
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../Builds/DerangedCircus\Jam11_Deranged-Circus.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\julian_klang-games\Projects\Unity\Builds\DerangedCircus" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\julian_klang-games\Projects\Unity\Jam11_Deranged-Circus\Jam11_Deranged-Circus -debugCodeOptimization" />
@@ -95,7 +113,7 @@
       <workItem from="1754827236436" duration="4158000" />
       <workItem from="1755028324201" duration="12721000" />
       <workItem from="1755126087866" duration="5005000" />
-      <workItem from="1755439890581" duration="6914000" />
+      <workItem from="1755439890581" duration="7832000" />
     </task>
     <servers />
   </component>

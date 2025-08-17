@@ -2131,14 +2131,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1369292000}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.2274376, z: -0, w: 0.9737927}
+  m_LocalRotation: {x: -0, y: -0.39193085, z: -0, w: 0.9199948}
   m_LocalPosition: {x: -0.54, y: 1.03, z: -4.92}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 330585546}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -26.293, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -46.149, z: 0}
 --- !u!65 &1369292006
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3189,7 +3189,7 @@ MonoBehaviour:
   filter: -32768
   m_SourceCollider: {fileID: 1905988813}
   m_DistanceField: {fileID: 0}
---- !u!1 &2017202827
+--- !u!1 &1964602097
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3197,8 +3197,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2017202829}
-  - component: {fileID: 2017202828}
+  - component: {fileID: 1964602099}
+  - component: {fileID: 1964602098}
   m_Layer: 0
   m_Name: BurstCollisionWorld
   m_TagString: Untagged
@@ -3206,13 +3206,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2017202828
+--- !u!114 &1964602098
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2017202827}
+  m_GameObject: {fileID: 1964602097}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1a161c4294214a4fbcb7e9e94800494, type: 3}
@@ -3220,13 +3220,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellSpans:
     m_AlignBytes: 16
---- !u!4 &2017202829
+--- !u!4 &1964602099
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2017202827}
+  m_GameObject: {fileID: 1964602097}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -3459,4 +3459,4 @@ SceneRoots:
   - {fileID: 1724596190}
   - {fileID: 1029482863}
   - {fileID: 384672018}
-  - {fileID: 2017202829}
+  - {fileID: 1964602099}
