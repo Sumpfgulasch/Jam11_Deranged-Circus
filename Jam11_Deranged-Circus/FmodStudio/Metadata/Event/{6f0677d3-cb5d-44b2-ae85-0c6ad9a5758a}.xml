@@ -197,7 +197,7 @@
 			<value>1</value>
 		</property>
 		<property name="volume">
-			<value>3</value>
+			<value>1</value>
 		</property>
 		<relationship name="sounds">
 			<destination>{cf3df24f-3749-40cc-bc3d-d1e471208c9b}</destination>
@@ -339,14 +339,7 @@
 			<destination>{dec8faeb-04e0-4a4e-b6de-c68d2a0a5f8d}</destination>
 		</relationship>
 	</object>
-	<object class="SpatialiserEffect" id="{72d0d0d4-9a3f-4cb0-8441-7cf6f90c2a83}">
-		<property name="maximumDistance">
-			<value>17</value>
-		</property>
-		<property name="overrideRange">
-			<value>true</value>
-		</property>
-	</object>
+	<object class="SpatialiserEffect" id="{72d0d0d4-9a3f-4cb0-8441-7cf6f90c2a83}" />
 	<object class="AutomationCurve" id="{879865ac-9011-4247-932e-003945e75f56}">
 		<relationship name="parameter">
 			<destination>{a3c149e5-025e-44dc-bc2d-2ce8241b14b9}</destination>

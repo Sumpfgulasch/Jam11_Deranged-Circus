@@ -46,10 +46,13 @@ public class GoatAudio : MonoBehaviour
     private void OnCollisionEnter(Collision other)
     {
         // Check if the collision velocity is high enough and if the other object is on an allowed layer.
-        if (rb.linearVelocity.magnitude > 6f && ((1 << other.gameObject.layer) & collisionLayerMask) != 0)
+        if (((1 << other.gameObject.layer) & collisionLayerMask) != 0)
         {
-            Debug.Log("Collision with " + other.gameObject.name + " on a valid layer.");
-            AudioManager.Instance.SetLocalParameter(audioInstance, "GoatHit", 1f);
+            Debug.Log("collision with circus; vel: " + rb.linearVelocity.magnitude);
+            if (rb.linearVelocity.magnitude > 3f) {
+                Debug.Log("Collision with " + other.gameObject.name + " on a valid layer.");
+                AudioManager.Instance.SetLocalParameter(audioInstance, "GoatHit", 1f);
+            }
         }
     }
 }
