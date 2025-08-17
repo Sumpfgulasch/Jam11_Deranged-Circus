@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{f2a1e8e4-e690-4628-8af8-4779873be6e0}">
+		<property name="name">
+			<value>MachineVerticalMovement</value>
+		</property>
+		<relationship name="folder">
+			<destination>{fe60d89f-f9af-4a22-982a-e3d65d9473f8}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{c01abfe2-89b0-4b55-aee5-e5c7afa8d70c}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{c01abfe2-89b0-4b55-aee5-e5c7afa8d70c}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
