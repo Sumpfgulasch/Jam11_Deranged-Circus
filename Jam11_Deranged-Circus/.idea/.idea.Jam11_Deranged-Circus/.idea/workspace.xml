@@ -6,17 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="84f4aadf-4bf1-4e11-ba10-752ddaad5bf7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam11_Deranged-Circus/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam11_Deranged-Circus/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/InteractTransparent.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/InteractTransparent.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Folder.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Folder/GrabIndicator.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Folder/GrabIndicator.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FmodGuids.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FmodGuids.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RotateOnKeyPress.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RotateOnKeyPress.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FmodStudio/.cache/buildrecords/Desktop/Master.br" beforeDir="false" afterPath="$PROJECT_DIR$/FmodStudio/.cache/buildrecords/Desktop/Master.br" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FmodStudio/Build/Desktop/Master.bank" beforeDir="false" afterPath="$PROJECT_DIR$/FmodStudio/Build/Desktop/Master.bank" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FmodStudio/Build/Desktop/Master.strings.bank" beforeDir="false" afterPath="$PROJECT_DIR$/FmodStudio/Build/Desktop/Master.strings.bank" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FmodStudio/Metadata/Event/{36d9c5f8-3532-4635-832a-b061b1db26ef}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FmodStudio/Metadata/Event/{36d9c5f8-3532-4635-832a-b061b1db26ef}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RopeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RopeController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +97,7 @@
       <workItem from="1754827236436" duration="4158000" />
       <workItem from="1755028324201" duration="12721000" />
       <workItem from="1755126087866" duration="5005000" />
-      <workItem from="1755439890581" duration="2480000" />
+      <workItem from="1755439890581" duration="3627000" />
     </task>
     <servers />
   </component>

@@ -26,6 +26,9 @@ public class RopeController : MonoBehaviour
     public RopeEnd startEnd;
     public RopeEnd endEnd;
 
+    public System.Action OnRopeEndPlugged;
+    public System.Action OnRopeEndUnplugged;
+
     private ObiRope rope;
     private Coroutine activeTransition = null;
 
@@ -131,6 +134,7 @@ public class RopeController : MonoBehaviour
                 ropeEnd.attachment.attachmentType = isDynamic ? ObiParticleAttachment.AttachmentType.Dynamic : ObiParticleAttachment.AttachmentType.Static;
                 ropeEnd.state = RopeEndState.Plugged;
                 Destroy(tempTarget.gameObject);
+                OnRopeEndPlugged?.Invoke();
             };
 
             activeTransition = StartCoroutine(TransitionToPosition(ropeEnd, tempTarget, plugTarget, transitionDuration, onComplete));
@@ -201,6 +205,7 @@ public class RopeController : MonoBehaviour
                 ropeEnd.attachment.target = grabTarget;
                 ropeEnd.state = RopeEndState.Held;
                 Destroy(tempTarget.gameObject);
+                OnRopeEndUnplugged?.Invoke();
             };
 
             activeTransition = StartCoroutine(TransitionToPosition(ropeEnd, tempTarget, grabTarget, transitionDuration, onComplete));

@@ -87,6 +87,30 @@ public class RopeInteractor : MonoBehaviour
 
             grabIndicatorInstance.SetActive(false);
         }
+        else
+        {
+            if (Input.GetKey(KeyCode.R))
+            {
+                // If not holding anything and not targeting anything, check for the special "unplug dynamic end" case.
+            var rope = FindObjectOfType<RopeController>();
+            if (rope != null && rope.startEnd.state == RopeController.RopeEndState.Plugged && rope.endEnd.state == RopeController.RopeEndState.Plugged)
+            {
+                RopeController.RopeEnd dynamicEnd = null;
+                if (rope.startEnd.attachment.attachmentType == ObiParticleAttachment.AttachmentType.Dynamic)
+                    dynamicEnd = rope.startEnd;
+                else if (rope.endEnd.attachment.attachmentType == ObiParticleAttachment.AttachmentType.Dynamic)
+                    dynamicEnd = rope.endEnd;
+
+                if (dynamicEnd != null)
+                {
+                    currentRope = rope;
+                    heldRopeEnd = dynamicEnd;
+                    currentRope.Unplug(heldRopeEnd, playerGrabTransform, grabTransitionDuration);
+                    grabIndicatorInstance.SetActive(false);
+                }
+            }
+            }
+        }
     }
 
     private void CheckForGrabbableRopeEnds()

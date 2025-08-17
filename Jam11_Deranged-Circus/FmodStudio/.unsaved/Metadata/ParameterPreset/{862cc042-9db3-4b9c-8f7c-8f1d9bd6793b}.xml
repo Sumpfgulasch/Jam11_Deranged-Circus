@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{862cc042-9db3-4b9c-8f7c-8f1d9bd6793b}">
+		<property name="name">
+			<value>GoatHit</value>
+		</property>
+		<relationship name="folder">
+			<destination>{fe60d89f-f9af-4a22-982a-e3d65d9473f8}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{e1dd3032-9e11-41d8-875d-aee17c964171}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{e1dd3032-9e11-41d8-875d-aee17c964171}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="velocity">
+			<value>-2.7999999523162842</value>
+		</property>
+	</object>
+</objects>
