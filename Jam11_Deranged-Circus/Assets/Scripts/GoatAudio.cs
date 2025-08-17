@@ -31,6 +31,7 @@ public class GoatAudio : MonoBehaviour
 
         // Send the speed value to the FMOD event's "Speed" parameter.
         AudioManager.Instance.SetLocalParameter(audioInstance, "Speed", speed);
+        AudioManager.Instance.SetGlobalParameter("GoatVelocity", rb.linearVelocity.magnitude);
     }
 
     void OnDestroy()
@@ -48,10 +49,9 @@ public class GoatAudio : MonoBehaviour
         // Check if the collision velocity is high enough and if the other object is on an allowed layer.
         if (((1 << other.gameObject.layer) & collisionLayerMask) != 0)
         {
-            Debug.Log("collision with circus; vel: " + rb.linearVelocity.magnitude);
-            if (rb.linearVelocity.magnitude > 2.7f) {
-                Debug.Log("Collision with " + other.gameObject.name + " on a valid layer.");
+            if (rb.linearVelocity.magnitude > 2.3f || rb.angularVelocity.magnitude > 2.3f) {
                 AudioManager.Instance.SetLocalParameter(audioInstance, "GoatHit", 1f);
+                Debug.Log("collision goat; vel: " + rb.linearVelocity.magnitude + ", angularVel: " + rb.angularVelocity.magnitude);
             }
         }
     }

@@ -77,6 +77,8 @@ public class RotateOnKeyPress : MonoBehaviour
             Quaternion deltaRotation = Quaternion.Euler(Vector3.up * currentRotationSpeed * Time.fixedDeltaTime);
             rb.MoveRotation(rb.rotation * deltaRotation);
         }
+        
+        AudioManager.Instance.SetGlobalParameter("MachineRotationSpeed", currentRotationSpeed);
 
         if ((targetPosition - rb.position).magnitude > 0.01f) {
             rb.MovePosition(Vector3.MoveTowards(rb.position, targetPosition, moveSpeed * Time.fixedDeltaTime));

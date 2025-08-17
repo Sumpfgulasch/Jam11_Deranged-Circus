@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{7f1a1ad4-c1ec-4b84-931c-7a0db576981f}">
+		<property name="name">
+			<value>GoatKillProgress</value>
+		</property>
+		<relationship name="folder">
+			<destination>{fe60d89f-f9af-4a22-982a-e3d65d9473f8}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{d9958c38-1c35-4850-8c62-b959d1102b1f}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{d9958c38-1c35-4850-8c62-b959d1102b1f}">
+		<property name="maximum">
+			<value>16</value>
+		</property>
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>3</value>
+		</property>
+		<property name="seekSpeedDescending">
+			<value>0.64000000953674319</value>
+		</property>
+		<property name="seekSpeedAsymmetric">
+			<value>true</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>

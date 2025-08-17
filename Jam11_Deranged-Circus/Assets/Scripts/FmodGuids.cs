@@ -14,6 +14,7 @@ namespace Audio
         public static readonly FMOD.GUID Chain = new FMOD.GUID { Data1 = -640444492, Data2 = 1190958630, Data3 = 1990105474, Data4 = 1486807802 };
         public static readonly FMOD.GUID Goat = new FMOD.GUID { Data1 = 1862694867, Data2 = 1152568157, Data3 = 1779205550, Data4 = -1972001319 };
         public static readonly FMOD.GUID MachineInUse = new FMOD.GUID { Data1 = -248050794, Data2 = 1168357394, Data3 = 474407582, Data4 = -1833110136 };
+        public static readonly FMOD.GUID Music = new FMOD.GUID { Data1 = -2106973791, Data2 = 1254880073, Data3 = -1241359476, Data4 = -1563175245 };
         public static readonly FMOD.GUID PlayerFootsteps = new FMOD.GUID { Data1 = -9758484, Data2 = 1245021375, Data3 = 1395276450, Data4 = 767652684 };
         public static readonly FMOD.GUID PlayerGrabChain = new FMOD.GUID { Data1 = -1479879123, Data2 = 1320192018, Data3 = -1221705050, Data4 = -1436140600 };
         public static readonly FMOD.GUID PlayerThrowChain = new FMOD.GUID { Data1 = -1599994653, Data2 = 1322105009, Data3 = 1488597420, Data4 = -1608554852 };
@@ -22,7 +23,7 @@ namespace Audio
 
         public static readonly Dictionary<string, FMOD.GUID> AudioEventNameToGuid = new Dictionary<string, FMOD.GUID>()
         {
-                {"Chain", Chain}, {"Goat", Goat}, {"MachineInUse", MachineInUse}, {"PlayerFootsteps", PlayerFootsteps}, {"PlayerGrabChain", PlayerGrabChain}, {"PlayerThrowChain", PlayerThrowChain}, {"RoomAmbience", RoomAmbience}, 
+                {"Chain", Chain}, {"Goat", Goat}, {"MachineInUse", MachineInUse}, {"Music", Music}, {"PlayerFootsteps", PlayerFootsteps}, {"PlayerGrabChain", PlayerGrabChain}, {"PlayerThrowChain", PlayerThrowChain}, {"RoomAmbience", RoomAmbience}, 
         };
     }
 

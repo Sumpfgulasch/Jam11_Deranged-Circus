@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
 
     private ObiRope obiRope;
     private GameObject currentGoat;
+    private Rigidbody goatRb;
 
     void Awake()
     {
@@ -42,12 +43,14 @@ public class GameManager : MonoBehaviour
         if (initialGoat != null)
         {
             currentGoat = initialGoat.gameObject;
+            goatRb = currentGoat.GetComponent<Rigidbody>();
         }
     }
 
     void Update()
     {
         ManageGoat();
+        UpdateFmodParameters();
     }
 
     void OnEnable()
@@ -88,6 +91,7 @@ public class GameManager : MonoBehaviour
                 Vector3 spawnPosition = goatSpawnPoint != null ? goatSpawnPoint.position : Vector3.zero;
                 Quaternion spawnRotation = goatSpawnPoint != null ? goatSpawnPoint.rotation : Quaternion.identity;
                 currentGoat = Instantiate(goatPrefab, spawnPosition, spawnRotation);
+                goatRb = currentGoat.GetComponent<Rigidbody>();
             }
         }
         else
@@ -97,7 +101,26 @@ public class GameManager : MonoBehaviour
             {
                 Destroy(currentGoat);
                 currentGoat = null; // Set to null so a new one spawns next frame.
+                goatRb = null;
             }
         }
+    }
+
+    private void UpdateFmodParameters()
+    {
+        if (ropeController == null) return;
+
+        int pluggedCount = 0;
+        if (ropeController.startEnd.state == RopeController.RopeEndState.Plugged) pluggedCount++;
+        if (ropeController.endEnd.state == RopeController.RopeEndState.Plugged) pluggedCount++;
+
+        float goatKillProgress = pluggedCount;
+
+        if (pluggedCount == 2 && Input.GetKey(KeyCode.R) && goatRb != null)
+        {
+            goatKillProgress += goatRb.linearVelocity.magnitude;
+        }
+
+        AudioManager.Instance.SetGlobalParameter(FmodParameter.GOAT_KILL_PROGRESS, goatKillProgress);
     }
 }
