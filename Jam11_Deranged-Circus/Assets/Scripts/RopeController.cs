@@ -1,3 +1,4 @@
+using Audio;
 using Obi;
 using System.Collections;
 using UnityEngine;
@@ -88,6 +89,8 @@ public class RopeController : MonoBehaviour
     {
         if (ropeEnd.state == RopeEndState.Free && activeTransition == null)
         {
+            AudioManager.Instance.Play2DAudio(AudioEvent.PlayerGrabChain);
+
             // Create a temporary, non-parented transform to act as the attachment point.
             Transform tempTarget = new GameObject("TempGrabTarget").transform;
             tempTarget.position = GetRopeEndPosition(ropeEnd);
@@ -106,6 +109,8 @@ public class RopeController : MonoBehaviour
     {
         if (ropeEnd.state == RopeEndState.Held && activeTransition == null)
         {
+            AudioManager.Instance.Play2DAudio(AudioEvent.PlayerThrowChain);
+
             // The current target is the player's hand. We need to move from its position.
             Transform currentTarget = ropeEnd.attachment.target;
             
@@ -136,6 +141,8 @@ public class RopeController : MonoBehaviour
     {
         if (ropeEnd.state == RopeEndState.Held && activeTransition == null)
         {
+            AudioManager.Instance.Play2DAudio(AudioEvent.PlayerThrowChain);
+
             // The current target is the player's hand.
             Transform currentTarget = ropeEnd.attachment.target;
 
@@ -172,6 +179,8 @@ public class RopeController : MonoBehaviour
     {
         if (ropeEnd.state == RopeEndState.Plugged && activeTransition == null)
         {
+            AudioManager.Instance.Play2DAudio(AudioEvent.PlayerGrabChain);
+            
             // The current target is the plug. We need to move from its position.
             Transform currentTarget = ropeEnd.attachment.target;
             
