@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84f4aadf-4bf1-4e11-ba10-752ddaad5bf7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam11_Deranged-Circus/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam11_Deranged-Circus/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GoatAudio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GoatAudio.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FmodStudio/.cache/buildrecords/Desktop/Master.br" beforeDir="false" afterPath="$PROJECT_DIR$/FmodStudio/.cache/buildrecords/Desktop/Master.br" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FmodStudio/Build/Desktop/Master.bank" beforeDir="false" afterPath="$PROJECT_DIR$/FmodStudio/Build/Desktop/Master.bank" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FmodStudio/Metadata/Event/{f1370b96-b812-45a3-9ee2-461c88f5bc92}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FmodStudio/Metadata/Event/{f1370b96-b812-45a3-9ee2-461c88f5bc92}.xml" afterDir="false" />
-    </list>
+    <list default="true" id="84f4aadf-4bf1-4e11-ba10-752ddaad5bf7" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -110,7 +103,7 @@
       <workItem from="1755028324201" duration="12721000" />
       <workItem from="1755126087866" duration="5005000" />
       <workItem from="1755439890581" duration="7832000" />
-      <workItem from="1755465640428" duration="5847000" />
+      <workItem from="1755465640428" duration="6613000" />
     </task>
     <servers />
   </component>
