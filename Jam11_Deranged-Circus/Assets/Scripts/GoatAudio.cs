@@ -46,12 +46,15 @@ public class GoatAudio : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
+        print("OnCollisionEnter");
         // Check if the collision velocity is high enough and if the other object is on an allowed layer.
         if (((1 << other.gameObject.layer) & collisionLayerMask) != 0)
         {
+            Debug.Log("collision BEFORE trigger; vel: " + rb.linearVelocity.magnitude + ", angularVel: " + rb.angularVelocity.magnitude);
+
             if (rb.linearVelocity.magnitude > 2.3f || rb.angularVelocity.magnitude > 2.3f) {
                 AudioManager.Instance.SetLocalParameter(audioInstance, "GoatHit", 1f);
-                Debug.Log("collision goat; vel: " + rb.linearVelocity.magnitude + ", angularVel: " + rb.angularVelocity.magnitude);
+                Debug.Log("collision AFTER trigger; vel: " + rb.linearVelocity.magnitude + ", angularVel: " + rb.angularVelocity.magnitude);
             }
         }
     }

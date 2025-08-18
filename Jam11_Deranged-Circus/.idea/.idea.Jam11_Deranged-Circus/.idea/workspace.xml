@@ -6,18 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="84f4aadf-4bf1-4e11-ba10-752ddaad5bf7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam11_Deranged-Circus/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam11_Deranged-Circus/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FmodGuids.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FmodGuids.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GoatAudio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GoatAudio.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RotateOnKeyPress.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RotateOnKeyPress.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FmodStudio/.cache/buildrecords/Desktop/Master.br" beforeDir="false" afterPath="$PROJECT_DIR$/FmodStudio/.cache/buildrecords/Desktop/Master.br" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FmodStudio/Build/Desktop/Master.bank" beforeDir="false" afterPath="$PROJECT_DIR$/FmodStudio/Build/Desktop/Master.bank" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FmodStudio/Build/Desktop/Master.strings.bank" beforeDir="false" afterPath="$PROJECT_DIR$/FmodStudio/Build/Desktop/Master.strings.bank" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FmodStudio/Metadata/Event/{6f0677d3-cb5d-44b2-ae85-0c6ad9a5758a}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FmodStudio/Metadata/Event/{6f0677d3-cb5d-44b2-ae85-0c6ad9a5758a}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FmodStudio/Metadata/Event/{d9d397b4-9626-46fc-8299-9e76fae29e58}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FmodStudio/Metadata/Event/{d9d397b4-9626-46fc-8299-9e76fae29e58}.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FmodStudio/Metadata/Event/{f1370b96-b812-45a3-9ee2-461c88f5bc92}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FmodStudio/Metadata/Event/{f1370b96-b812-45a3-9ee2-461c88f5bc92}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FmodStudio/Metadata/Event/{ff6b18ec-84bf-4a35-a23a-2a534c73c12d}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FmodStudio/Metadata/Event/{ff6b18ec-84bf-4a35-a23a-2a534c73c12d}.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +110,7 @@
       <workItem from="1755028324201" duration="12721000" />
       <workItem from="1755126087866" duration="5005000" />
       <workItem from="1755439890581" duration="7832000" />
-      <workItem from="1755465640428" duration="4781000" />
+      <workItem from="1755465640428" duration="5847000" />
     </task>
     <servers />
   </component>
