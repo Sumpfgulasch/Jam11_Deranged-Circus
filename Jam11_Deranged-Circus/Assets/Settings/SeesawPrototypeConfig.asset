@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bb784e0731fc524ba74f53365142f02, type: 3}
+  m_Name: SeesawPrototypeConfig
+  m_EditorClassIdentifier: Assembly-CSharp::SeesawConfig
+  maxAngle: 28
+  momentOfInertia: 6
+  weightGravityScale: 18
+  angularDamping: 8
+  impactDamping: 0.72
+  hardImpactDamping: 0.85
+  hardImpactSpeed: 70
+  reboundFactor: 0.28
+  maxReboundSpeed: 16
+  pushWindowDistance: 5
+  optimalPushDistance: 0.08
+  minimumGroundDistance: 0.04
+  holdChargeRate: 1.2
+  maxHoldCharge: 1
+  earlyHoldBrake: 90
+  releaseMomentumMultiplier: 0.65
+  baseReleaseBoost: 120
+  maxReleaseBoost: 500
+  dismountVerticalVelocity: 5.5
+  seatedVisualLiftVelocity: 1.25
+  cameraImpactAngularSpeed: 45
+  cameraImpactPitch: 4.5
+  cameraImpactDip: 0.05
+  cameraImpactReturnSpeed: 12

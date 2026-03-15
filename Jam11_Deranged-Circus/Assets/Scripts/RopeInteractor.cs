@@ -18,9 +18,15 @@ public class RopeInteractor : MonoBehaviour
     private GameObject grabIndicatorInstance;
     private RopeController currentRope;
     private RopeController.RopeEnd heldRopeEnd;
+    private SeesawPlayerInteractor seesawPlayerInteractor;
 
     private RopeController.RopeEnd potentialGrabTarget;
     private Transform potentialPlugTarget;
+
+    void Awake()
+    {
+        seesawPlayerInteractor = GetComponent<SeesawPlayerInteractor>();
+    }
 
     void Start()
     {
@@ -42,6 +48,14 @@ public class RopeInteractor : MonoBehaviour
 
     void Update()
     {
+        if (seesawPlayerInteractor != null && seesawPlayerInteractor.IsSeated)
+        {
+            potentialGrabTarget = null;
+            potentialPlugTarget = null;
+            grabIndicatorInstance.SetActive(false);
+            return;
+        }
+
         if (heldRopeEnd == null)
         {
             CheckForGrabbableRopeEnds();
@@ -54,6 +68,11 @@ public class RopeInteractor : MonoBehaviour
 
     private void OnInteract(InputAction.CallbackContext context)
     {
+        if (seesawPlayerInteractor != null && seesawPlayerInteractor.IsSeated)
+        {
+            return;
+        }
+
         if (heldRopeEnd != null)
         {
             // Player is holding a rope end.
